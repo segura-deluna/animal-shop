@@ -2,7 +2,7 @@
   padding: 218px 0 245px;
   color: $light;
   background-color: $purple;
-  background-image: url('/img/bg-dog.png'), url('/img/pattern.svg');
+  background-image: url('../img/bg-dog.png'), url('../img/pattern.svg');
   background-repeat: no-repeat, repeat;
   background-position:
     right bottom,
@@ -10,7 +10,7 @@
   background-size: contain, auto;
 
   @include bigscreen {
-    background-image: url('/img/bg-dog-large.png'), url('/img/pattern.svg');
+    background-image: url('../img/bg-dog-large.png'), url('../img/pattern.svg');
     background-repeat: no-repeat, repeat;
     background-position:
       left 48vw bottom 0,
@@ -38,7 +38,7 @@
 
   &_store {
     background-color: $green;
-    background-image: url('/img/hero-cat.png'), url('/img/pattern.svg');
+    background-image: url('../img/hero-cat.png'), url('../img/pattern.svg');
     background-repeat: no-repeat, repeat;
     background-size: 839px, auto;
     padding: 218px 0 45px;

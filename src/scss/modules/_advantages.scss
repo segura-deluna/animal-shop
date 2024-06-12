@@ -1,5 +1,3 @@
-//@use 'var' as *;
-//@use 'media' as *;
 
 .advantages {
   position: relative;
@@ -8,7 +6,7 @@
   &__bg {
     border-radius: 300px 300px 0 0;
     background-color: $carrot;
-    background-image: url('/img/pattern.svg');
+    background-image: url('../img/pattern.svg');
     background-repeat: repeat;
     background-position: center;
     background-size: auto;
