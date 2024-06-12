@@ -86,38 +86,38 @@
     }
 
     &_assortment {
-      background-image: url('/img/assortment.png');
+      background-image: url('../img/assortment.png');
       background-image: image-set(
-        url('/img/assortment.avif') type('image/avif') 1x,
-        url('/img/assortment@2x.avif') type('image/avif') 2x,
-        url('/img/assortment.webp') type('image/webp') 1x,
-        url('/img/assortment@2x.webp') type('image/webp') 2x,
-        url('/img/assortment.png') type('image/png') 1x,
-        url('/img/assortment@2x.png') type('image/png') 2x
+        url('../img/assortment.avif') type('image/avif') 1x,
+        url('../img/assortment@2x.avif') type('image/avif') 2x,
+        url('../img/assortment.webp') type('image/webp') 1x,
+        url('../img/assortment@2x.webp') type('image/webp') 2x,
+        url('../img/assortment.png') type('image/png') 1x,
+        url('../img/assortment@2x.png') type('image/png') 2x
       );
     }
 
     &_quality {
-      background-image: url('/img/quality.png');
+      background-image: url('../img/quality.png');
       background-image: image-set(
-        url('/img/quality.avif') type('image/avif') 1x,
-        url('/img/quality@2x.avif') type('image/avif') 2x,
-        url('/img/quality.webp') type('image/webp') 1x,
-        url('/img/quality@2x.webp') type('image/webp') 2x,
-        url('/img/quality.png') type('image/png') 1x,
-        url('/img/quality@2x.png') type('image/png') 2x
+        url('../img/quality.avif') type('image/avif') 1x,
+        url('../img/quality@2x.avif') type('image/avif') 2x,
+        url('../img/quality.webp') type('image/webp') 1x,
+        url('../img/quality@2x.webp') type('image/webp') 2x,
+        url('../img/quality.png') type('image/png') 1x,
+        url('../img/quality@2x.png') type('image/png') 2x
       );
     }
 
     &_personal {
-      background-image: url('/img/personal.png');
+      background-image: url('../img/personal.png');
       background-image: image-set(
-        url('/img/personal.avif') type('image/avif') 1x,
-        url('/img/personal@2x.avif') type('image/avif') 2x,
-        url('/img/personal.webp') type('image/webp') 1x,
-        url('/img/personal@2x.webp') type('image/webp') 2x,
-        url('/img/personal.png') type('image/png') 1x,
-        url('/img/personal@2x.png') type('image/png') 2x
+        url('../img/personal.avif') type('image/avif') 1x,
+        url('../img/personal@2x.avif') type('image/avif') 2x,
+        url('../img/personal.webp') type('image/webp') 1x,
+        url('../img/personal@2x.webp') type('image/webp') 2x,
+        url('../img/personal.png') type('image/png') 1x,
+        url('../img/personal@2x.png') type('image/png') 2x
       );
     }
   }
@@ -148,7 +148,7 @@
     left: 0;
     width: 306px;
     height: 306px;
-    background-image: url('/img/star-green.svg');
+    background-image: url('../img/star-green.svg');
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -205,14 +205,14 @@
   &::after {
     content: '';
     display: block;
-    background-image: url('/img/dog.png');
+    background-image: url('../img/dog.png');
     background-image: image-set(
-      url('/img/dog.avif') type('image/avif') 1x,
-      url('/img/dog@2x.avif') type('image/avif') 2x,
-      url('/img/dog.webp') type('image/webp') 1x,
-      url('/img/dog@2x.webp') type('image/webp') 2x,
-      url('/img/dog.png') type('image/png') 1x,
-      url('/img/dog@2x.png') type('image/png') 2x
+      url('../img/dog.avif') type('image/avif') 1x,
+      url('../img/dog@2x.avif') type('image/avif') 2x,
+      url('../img/dog.webp') type('image/webp') 1x,
+      url('../img/dog@2x.webp') type('image/webp') 2x,
+      url('../img/dog.png') type('image/png') 1x,
+      url('../img/dog@2x.png') type('image/png') 2x
     );
     background-size: contain;
     position: absolute;
