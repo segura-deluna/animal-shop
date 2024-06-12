@@ -1,0 +1,132 @@
+//@use '../variables' as *;
+//@use '../media' as *;
+
+.footer {
+  padding: 80px 0 32px;
+  background-color: $green;
+  color: $light;
+  background-image: url('/favicon.svg');
+  background-repeat: no-repeat;
+  background-position: left 41vw bottom -75px;
+  background-size: 375px;
+
+  @include laptop {
+    padding-top: 50px;
+    background-size: 311px;
+  }
+
+  @include tablet {
+    padding-top: 40px;
+    background-size: 215px;
+    background-position: right 46px bottom -45px;
+  }
+
+  @include mobile {
+    padding: 30px 0 24px;
+    background-size: 144px;
+    background-position: right -30px bottom -30px;
+  }
+
+  &__container {
+    display: grid;
+    gap: 25px;
+    grid-template-areas:
+      'logo contacts'
+      'info contacts';
+
+    @include tablet {
+      gap: 82px 30px;
+    }
+
+    @include mobile {
+      gap: 0;
+      grid-template-areas:
+        'logo'
+        'contacts'
+        'info';
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+    width: 332px;
+    margin-bottom: 50px;
+
+    @include mobile {
+      width: 200px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__info {
+    grid-area: info;
+    font-size: 16px;
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  &__copyright {
+    margin-bottom: 17px;
+  }
+
+  &__text {
+    margin-bottom: 3px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 3px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $carrot;
+    }
+
+    & svg {
+      fill: $light;
+      transition: fill 0.3s ease-in-out;
+
+      &:hover {
+        fill: $carrot;
+      }
+    }
+  }
+
+  &__contacts {
+    grid-area: contacts;
+    justify-self: right;
+
+    @include mobile {
+      margin-bottom: 68px;
+      justify-self: start;
+    }
+  }
+
+  &__email {
+    display: inline-block;
+    font-style: normal;
+    margin-bottom: 16px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $carrot;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}

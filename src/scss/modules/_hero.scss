@@ -1,0 +1,121 @@
+.hero {
+  padding: 218px 0 245px;
+  color: $light;
+  background-color: $purple;
+  background-image: url('/img/bg-dog.png'), url('/img/pattern.svg');
+  background-repeat: no-repeat, repeat;
+  background-position:
+    right bottom,
+    center;
+  background-size: contain, auto;
+
+  @include bigscreen {
+    background-image: url('/img/bg-dog-large.png'), url('/img/pattern.svg');
+    background-repeat: no-repeat, repeat;
+    background-position:
+      left 48vw bottom 0,
+      center;
+    background-size: 1750px, auto;
+  }
+
+  @include laptop {
+    padding: 148px 0 172px;
+  }
+
+  @include tablet {
+    padding: 108px 0 461px;
+    background-size:
+      655px 564px,
+      cover;
+  }
+
+  @include mobile {
+    padding: 100px 0 283px;
+    background-size:
+      294px 261px,
+      cover;
+  }
+
+  &_store {
+    background-color: $green;
+    background-image: url('/img/hero-cat.png'), url('/img/pattern.svg');
+    background-repeat: no-repeat, repeat;
+    background-size: 839px, auto;
+    padding: 218px 0 45px;
+
+    @include laptop {
+      background-size: 510px, auto;
+      padding: 148px 0 30px;
+    }
+
+    @include tablet {
+      background-size: 440px, auto;
+      padding: 108px 0 255px;
+    }
+
+    @include mobile {
+      background-size: 100%, auto;
+      padding: 100px 0 260px;
+    }
+  }
+
+  &__title {
+    max-width: 810px;
+    width: 100%;
+    margin-bottom: 50px;
+
+    @media (max-width: 1330px) {
+      max-width: 600px;
+      margin-bottom: 32px;
+    }
+
+    @include laptop {
+      max-width: 588px;
+    }
+
+    @include mobile {
+      max-width: 292px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text {
+    max-width: 420px;
+    margin-bottom: 60px;
+
+    @include laptop {
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      max-width: 292px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__store-link {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 40px;
+    padding: 16px 24px;
+    background-color: $green;
+    color: $light;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url('/img/arrow-up.svg') no-repeat center/contain;
+    }
+
+    &:hover {
+      background-color: darken($green, 2%);
+    }
+  }
+}
